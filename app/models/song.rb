@@ -2,6 +2,7 @@ class Song < ActiveRecord::Base
    validates :title, presence: true
    validates :release_year, presence: true, if: :released?
    validate  :future
+   validate :same_song
    def future
      if release_year.present? && release_year > Date.today.year
        errors.add(:release_year, "future")
