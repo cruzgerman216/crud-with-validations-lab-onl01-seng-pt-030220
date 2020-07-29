@@ -1,3 +1,3 @@
-class Song < ApplicationRecord
+class Song < ActiveRecord::Base
    validates :title, presence: true
 end
