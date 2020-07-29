@@ -22,4 +22,3 @@ class SongsController < ApplicationController
   def author_params
   end
 end
-
