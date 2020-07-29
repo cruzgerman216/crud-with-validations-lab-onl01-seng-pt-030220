@@ -1,5 +1,4 @@
 class Song < ActiveRecord::Base
    validates :title, presence: true
-   validates :release_year, presence: true
-   if: :release?
+   validates :release_year, presence: true if: :release?
 end
