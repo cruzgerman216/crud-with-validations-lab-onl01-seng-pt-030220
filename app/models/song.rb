@@ -4,7 +4,7 @@ class Song < ActiveRecord::Base
    validate  :future
    def future
      if release_year > date.today.year
-       errs.add(:release_year, "future")
+       errors.add(:release_year, "future")
      end
    end
 
