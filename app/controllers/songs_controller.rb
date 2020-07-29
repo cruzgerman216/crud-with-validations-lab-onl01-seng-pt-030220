@@ -19,6 +19,6 @@ class SongsController < ApplicationController
 
   private
 
-  def author_params
+  def song_params
   end
 end
