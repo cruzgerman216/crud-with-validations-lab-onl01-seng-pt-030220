@@ -8,7 +8,7 @@ class Song < ActiveRecord::Base
      end
    end
 
-   def same_song 
+   def same_song
      if Song.any? {|song| song.title == title && song.artist_name == artist_name && song.release_year == release_year}
     errors.add(:title, "same song")
 end
